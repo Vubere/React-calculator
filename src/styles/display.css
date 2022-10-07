@@ -1,0 +1,35 @@
+.display{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.116);
+  display: grid;
+  grid-template-columns: 95% 5%;
+  grid-template-rows: 40% 60%;
+  border-radius: 4px;
+}
+.prevValue{
+  grid-area: 1/1/ span 1/ span 1;
+  text-align: right;
+  color: black;
+  font-size: 1.4em;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.curValue{
+  color: black;
+  text-align: right;
+  grid-area: 2/1/span 1/span 2;
+  font-size: 2em;
+  overflow: auto;
+  padding: 4px;
+}
+.operand{
+  color: black;
+  text-align: center;
+  height: 100%;
+  font-size: 1.3em;
+  display: grid;
+  place-items: center;
+  grid-area: 1/2/span 1/span 1;
+}

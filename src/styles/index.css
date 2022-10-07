@@ -1,0 +1,39 @@
+@import "./display.css";
+@import "./buttons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(95, 75, 75),
+    rgb(156, 85, 85)
+  );
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+.calculator {
+  width: 80vw;
+  max-width: 300px;
+  height: 90vh;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  gap: 3px;
+  background-color: rgb(41, 32, 32);
+  padding: 8px;
+  border-radius: 7px;
+  outline: 1px solid #ffffff11;
+  box-shadow: rgba(0, 0, 0, 0.947) 1px 2px, rgba(255, 255, 255, 0.021) -1px -1px;
+}
