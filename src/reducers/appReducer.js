@@ -21,7 +21,7 @@ const appReducer = (state, action) => {
       };
 
     case "decimalAdded":
-      return state.decimal
+      return state.decimal||state.curVal.includes('.')
         ? state
         : state.curVal.length == 0
         ? state
