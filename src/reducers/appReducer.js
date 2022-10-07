@@ -25,6 +25,8 @@ const appReducer = (state, action) => {
         ? state
         : state.curVal.length == 0
         ? state
+        :state.curValType=="result"?
+        state
         : { ...state, decimal: true, curVal: state.curVal + action.payload };
 
     case "evaluate":
